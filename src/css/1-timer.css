@@ -1,0 +1,137 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.timer-container {
+  margin: 0 auto;
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  height: 70vh;
+}
+
+.timer-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+#datetime-picker {
+  width: 308px;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #808080;
+  color: #2e2f42;
+  background-color: #ffffff;
+  outline: none;
+  padding: 7px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  box-sizing: border-box;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#datetime-picker:hover {
+  border-color: #000;
+  color: #2e2f42;
+}
+
+#datetime-picker:active,
+#datetime-picker:focus-within {
+  border-color: #130d00;
+  color: #000;
+}
+
+#datetime-picker:disabled {
+  border-color: #808080;
+  color: #808080;
+}
+
+.timer-btn {
+  height: 40px;
+  width: 75px;
+  border: transparent;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #929911;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  font-size: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timer-btn:hover {
+   background-color:#929911 ;
+  color: #130d00;
+  border-color: #130d00;
+}
+
+.timer-btn:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer-btn:disabled:hover {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  width: 346px;
+  height: 72px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+  height: 72px;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #929911;
+}
+
+.label {
+  text-transform: uppercase;
+  color: #130d00;
+}
+
+.flatpickr-calendar {
+  background-color: #f5f5f5 !important;
+}
+
+.flatpickr-monthDropdown-months,
+.cur-year,
+.numInput {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+
+.flatpickr-weekday {
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  color: #333 !important;
+}
+
+.flatpickr-day.today {
+  border-color: #929911 !important;
+}
