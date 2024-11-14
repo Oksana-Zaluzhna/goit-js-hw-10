@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-D0Jhm2aI.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CEMkeL3o.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-C4XD5P0U.css">
+  </head>
+  <body>
+    <p><a class="back-link" href="./index.html">Go back</a></p>
+
+    <div class="snackbar-container">
+      <form class="form">
+        <label class="delay">
+          Delay (ms)
+          <input class="delay-input" type="number" name="delay" required />
+        </label>
+
+        <fieldset class="state">
+          <legend>State</legend>
+          <label class="state-label">
+            <input
+              class="fulfilled state-input"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+            Fulfilled
+          </label>
+          <label class="state-label">
+            <input
+              class="rejected state-input"
+              type="radio"
+              name="state"
+              value="rejected"
+              required
+            />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button class="create-btn" type="submit">Create notification</button>
+      </form>
+    </div>
+
+  </body>
+</html>
